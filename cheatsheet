@@ -1,0 +1,65 @@
+🖥️ TMUX - Useful Keybindings Cheatsheet 🎛️
+
+tmux is a powerful terminal multiplexer that lets you manage multiple sessions, windows, and panes. Here’s a handy cheat sheet for quick reference!
+
+🛠️ Basics
+Action	Keybinding
+Start a new session	tmux or tmux new -s <session-name>
+Attach to a session	tmux attach -t <session-name>
+Detach from session	Ctrl-b d
+List sessions	tmux ls
+Kill a session	tmux kill-session -t <session-name>
+
+🖼️ Windows (Tabs)
+Action	Keybinding
+Create new window	Ctrl-b c
+Switch to next window	Ctrl-b n
+Switch to previous window	Ctrl-b p
+Switch to a specific window	Ctrl-b <number>
+Rename current window	Ctrl-b ,
+Close current window	Ctrl-b &
+
+🔲 Panes (Splits)
+Action	Keybinding
+Split horizontally	Ctrl-b "
+Split vertically	Ctrl-b %
+Move between panes	Ctrl-b <arrow-key>
+Resize pane	Ctrl-b then hold <arrow-key>
+Close current pane	Ctrl-b x
+Swap panes	Ctrl-b o
+
+📦 Session & Window Management
+Action	Keybinding
+Detach from tmux	Ctrl-b d
+List all sessions	tmux ls
+Rename session	Ctrl-b $
+Kill session	tmux kill-session -t <session-name>
+Switch to previous session	Ctrl-b (
+Switch to next session	Ctrl-b )
+
+🎨 Copy Mode (Scroll & Copy)
+Action	Keybinding
+Enter copy mode	Ctrl-b [
+Scroll up/down	<Up>/<Down> or PageUp/PageDown
+Start selection	Space
+Copy selection	Enter
+Paste copied text	Ctrl-b ]
+
+⚡ Miscellaneous
+Action	Keybinding
+Reload tmux config	Ctrl-b : source-file ~/.tmux.conf
+Show clock	Ctrl-b t
+Synchronize panes	Ctrl-b : setw synchronize-panes on
+Turn off pane sync	Ctrl-b : setw synchronize-panes off
+
+🔥 Bonus Tips:
+
+    Use tmux new -As <session-name> to attach or create a session if it doesn't exist.
+
+    Add set -g mouse on to ~/.tmux.conf for mouse support (scrolling & resizing).
+
+    Use tmuxinator for advanced session management.
+
+💡 tmux is highly customizable! Modify keybindings in ~/.tmux.conf for an even smoother workflow. 
+
+Need more? Type man tmux for the full power of tmux! 🏆
